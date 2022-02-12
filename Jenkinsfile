@@ -7,7 +7,8 @@ pipeline {
         
         stage("git repo pull"){
             steps{
-            sh "git clone https://github.com/krish80552/begin.git"
+          git clone branch: "${params.BRANCH}", url: 'https://github.com/krish80552/begin.git'
+
         }
         }
         
