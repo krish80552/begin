@@ -14,13 +14,10 @@ pipeline {
             }
         }
     
-        stage {
-    post {
-       
-        always {
+    post { 
+        always { 
             cleanWs()
         }
-    
     }
         }
     }
