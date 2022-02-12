@@ -13,5 +13,15 @@ pipeline {
                 sh "cp index.html /var/www/html/"
             }
         }
+    
+    
+    post {
+       
+        always {
+            cleanWs()
+        }
+    
+    }
+    
     }
 }
