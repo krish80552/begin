@@ -1,7 +1,7 @@
 pipeline {
     agent any 
     
-    satges {
+    stages {
         stage("git repo pull"){
             steps{
             sh "git clone https://github.com/krish80552/begin.git"
