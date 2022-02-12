@@ -14,7 +14,7 @@ pipeline {
             }
         }
     
-    
+        stage {
     post {
        
         always {
@@ -22,6 +22,6 @@ pipeline {
         }
     
     }
-    
+        }
     }
 }
