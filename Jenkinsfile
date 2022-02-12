@@ -11,7 +11,6 @@ pipeline {
         stage("index file"){
             steps{
                 sh "cp index.html /var/www/html/"
-                sh "service httpd start"
             }
         }
     }
