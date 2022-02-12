@@ -13,16 +13,7 @@ pipeline {
                 sh "cp index.html /var/www/html/"
             }
         }
-    stage("clean"){
-            steps{
-    post { 
-        always { 
-            cleanWs()
-        
-    }
-        }
-    }
-        }
+    
     }
 
 }
